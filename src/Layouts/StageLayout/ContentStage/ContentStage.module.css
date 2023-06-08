@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+}
+
+.title {
+  margin-left: 40px;
+  font-size: 3.2rem;
+}
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  line-height: 15px;
+  padding-bottom: 200px;
+}

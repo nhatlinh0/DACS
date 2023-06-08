@@ -1,0 +1,36 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #faeaea;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+}
+
+.title {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-evenly;
+}
+
+.name {
+  font-size: 2.8rem;
+}
+
+.add {
+  width: 330px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.image {
+  width: 420px;
+  height: 300px;
+}

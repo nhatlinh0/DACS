@@ -1,0 +1,51 @@
+.wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+}
+
+.title {
+  font-size: 3.6rem;
+}
+
+.admin-wraper {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #eeeeee;
+}
+
+.admin-icon {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.A {
+  color: #fff;
+  font-size: 3.2rem;
+}
+.admin-text {
+  font-size: 1.6rem;
+}
+
+.admin-arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid black;
+}

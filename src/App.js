@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import InfoLayout from './Layouts/InfoLayout';
+import StageLayout from './Layouts/StageLayout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InfoLayout info="Nhập thông tin cây trồng" name="Tên cây trồng" stage="Nhập các giai đoạn phát triển cây trồng">
+        Thêm mới quy trình phát triển cây trồng
+      </InfoLayout>
+      <StageLayout info="Nhập thông tin giai đoạn cây trồng" name="Tên giai đoạn" content>
+        Thêm mới quy trình phát triển cây trồng
+      </StageLayout>
     </div>
   );
 }
