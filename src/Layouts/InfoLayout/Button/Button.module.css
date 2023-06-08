@@ -1,22 +1,22 @@
 .container {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 0px;
 }
 
 .btnThoat {
-  width: 86px;
-  height: 30px;
-  background-color: #e52222;
-  margin-right: 40px;
-  cursor: pointer;
-  border-radius: 4px;
+    width: 86px;
+    height: 30px;
+    background-color: #e52222;
+    margin-right: 40px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 .btnLuu {
-  width: 86px;
-  height: 30px;
-  background-color: #4dd597;
-  margin-right: 100px;
-  cursor: pointer;
-  border-radius: 4px;
+    width: 86px;
+    height: 30px;
+    background-color: #4dd597;
+    margin-right: 100px;
+    cursor: pointer;
+    border-radius: 4px;
 }

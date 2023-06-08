@@ -1,0 +1,100 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.formname {
+    font-size: 3.6rem;
+    font-weight: lighter;
+    margin: 40px 0;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.avatarwrap {
+    height: 260px;
+    width: 300px;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.titlewrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.lefttext {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.righttext {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.userinfowrap {
+    height: 260px;
+    flex: 1;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+}
+
+.userformwrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftform {
+    flex: 1;
+}
+
+.rightform {
+    flex: 1;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.label {
+    font-size: 1.6rem;
+}
+
+.textbox {
+    width: 70%;
+    height: 30px;
+    background: #f3f0f0;
+    border-radius: 5px;
+    border: none;
+}
+
+.marleft {
+    margin-left: 10px;
+}
+
+.marright {
+    margin-right: 10px;
+}
