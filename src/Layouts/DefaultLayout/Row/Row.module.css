@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: #ebebeb;
+    border: 1px solid #000000;
+}
+
+.headrow1 {
+    width: 40%;
+    text-align: center;
+}
+
+.headrow2 {
+    width: 20%;
+    text-align: center;
+}
+
+.headrow3 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.decs {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.action {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 2rem;
+}

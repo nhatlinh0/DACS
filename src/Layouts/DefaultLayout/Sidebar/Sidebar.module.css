@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.logowrap {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.wrap {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crops {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-left: 6px solid #4dd597;
+    cursor: pointer;
+}
+
+.animals {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 2.8rem;
+}

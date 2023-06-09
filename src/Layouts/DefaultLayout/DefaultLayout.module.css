@@ -1,0 +1,12 @@
+.container {
+    min-height: 600px;
+    display: flex;
+}
+
+.sidebar {
+    width: 10%;
+}
+
+.content {
+    width: 90%;
+}
