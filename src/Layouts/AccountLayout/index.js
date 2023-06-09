@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCamera } from '@fortawesome/free-solid-svg-icons';
 import Header from '../InfoLayout/Header';
 import styles from './AccountLayout.module.css';
 import classNames from 'classnames/bind';
@@ -17,7 +19,11 @@ function AccountLayout(props) {
                             <p className={styles.lefttext}>Ảnh đại diện</p>
                             <p className={styles.righttext}>Chỉnh sửa</p>
                         </div>
-                        <div className={styles.avatar}></div>
+                        <div className={styles.avatar}>
+                            <div className={styles.camerawrap}>
+                                <FontAwesomeIcon className={styles.cameraicon} icon={faCamera}></FontAwesomeIcon>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.userinfowrap}>
                         <div className={styles.titlewrap}>

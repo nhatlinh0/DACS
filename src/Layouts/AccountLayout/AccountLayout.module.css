@@ -49,6 +49,27 @@
     background-color: #fff;
     border: 1px solid #000;
     margin: 0 auto;
+    position: relative;
+}
+
+.camerawrap {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    bottom: -8px;
+    right: -8px;
+    box-shadow: 4px 4px 10px #333;
+}
+
+.cameraicon {
+    flex: 1;
+    font-size: 3.2rem;
+    color: #9e9d9d;
 }
 
 .userinfowrap {
