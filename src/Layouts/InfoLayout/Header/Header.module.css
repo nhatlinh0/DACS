@@ -1,51 +1,101 @@
 .wraper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 .image {
-  width: 70px;
-  height: 70px;
+    width: 70px;
+    height: 70px;
+}
+
+.imagelink {
+    line-height: 0px;
 }
 
 .title {
-  font-size: 3.6rem;
+    font-size: 3.6rem;
 }
 
 .admin-wraper {
-  width: 200px;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 40px;
-  background-color: #eeeeee;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #eeeeee;
+    position: relative;
 }
 
 .admin-icon {
-  background-color: black;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .A {
-  color: #fff;
-  font-size: 3.2rem;
+    color: #fff;
+    font-size: 3.2rem;
 }
 .admin-text {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 .admin-arrow {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid black;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black;
+    cursor: pointer;
+}
+
+.settingwrap {
+    position: absolute;
+    translate: 0px 100%;
+    width: 200px;
+    background-color: #eeeeee;
+    animation: fadeIn linear 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.setting {
+    border: 1px solid #333;
+    border-bottom: none;
+}
+
+.setting:hover {
+    background-color: rgb(182, 255, 231);
+}
+
+.logout {
+    border: 1px solid #333;
+}
+
+.logout:hover {
+    background-color: rgb(182, 255, 231);
+}
+
+.text {
+    font-size: 2rem;
+    user-select: none;
+    padding: 0 10px;
+}
+
+.none {
+    display: none;
 }

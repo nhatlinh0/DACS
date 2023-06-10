@@ -42,4 +42,49 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid black;
+    cursor: pointer;
+}
+
+.settingwrap {
+    position: absolute;
+    translate: 0px 100%;
+    width: 200px;
+    background-color: #eeeeee;
+    animation: fadeIn linear 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.setting {
+    border: 1px solid #333;
+    border-bottom: none;
+}
+
+.setting:hover {
+    background-color: rgb(182, 255, 231);
+}
+
+.logout {
+    border: 1px solid #333;
+}
+
+.logout:hover {
+    background-color: rgb(182, 255, 231);
+}
+
+.text {
+    font-size: 2rem;
+    user-select: none;
+    padding: 0 10px;
+}
+
+.none {
+    display: none;
 }

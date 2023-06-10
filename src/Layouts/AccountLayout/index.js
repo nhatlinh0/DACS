@@ -4,10 +4,24 @@ import Header from '../InfoLayout/Header';
 import styles from './AccountLayout.module.css';
 import classNames from 'classnames/bind';
 import Button from '../InfoLayout/Button';
+import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function AccountLayout(props) {
+    const [avatar, setAvatar] = useState();
+    useEffect(() => {
+        return () => {
+            avatar && URL.revokeObjectURL(avatar.preview);
+        };
+    }, [avatar]);
+
+    const handlePreview = (e) => {
+        const file = e.target.files[0];
+        file.preview = URL.createObjectURL(file);
+        setAvatar(file);
+    };
+
     return (
         <>
             <Header>{props.children}</Header>
@@ -20,7 +34,14 @@ function AccountLayout(props) {
                             <p className={styles.righttext}>Chỉnh sửa</p>
                         </div>
                         <div className={styles.avatar}>
-                            <div className={styles.camerawrap}>
+                            {avatar && <img src={avatar.preview} alt={avatar.preview} className={styles.image}></img>}
+                            <input id="input" type="file" onChange={handlePreview} hidden></input>
+                            <div
+                                className={styles.camerawrap}
+                                onClick={() => {
+                                    document.querySelector('#input').click();
+                                }}
+                            >
                                 <FontAwesomeIcon className={styles.cameraicon} icon={faCamera}></FontAwesomeIcon>
                             </div>
                         </div>
@@ -111,7 +132,7 @@ function AccountLayout(props) {
                     </div>
                 </div>
             </div>
-            <Button></Button>
+            <Button info crops></Button>
         </>
     );
 }

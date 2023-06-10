@@ -29,7 +29,16 @@ function InfoForm({ info, name, content }) {
                     <p className={styles.name}>{name}</p>
                     <input className={styles.add} type="text"></input>
                     <div className={styles.imagewrap}>
-                        <input type="file" className={styles.file} onChange={handlePreview}></input>
+                        <p
+                            className={styles.text}
+                            onClick={() => {
+                                document.querySelector('#input').click();
+                            }}
+                        >
+                            Thêm ảnh
+                        </p>
+                        <input type="file" id="input" className={styles.file} onChange={handlePreview} hidden></input>
+
                         {avatar && <img className={styles.image} src={avatar.preview} alt={avatar.preview}></img>}
                     </div>
                 </div>
