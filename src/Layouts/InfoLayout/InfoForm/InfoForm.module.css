@@ -30,27 +30,14 @@
     border-radius: 8px;
 }
 
-.image {
-    width: 420px;
-    height: 300px;
-    border: 1px dashed #9a9292;
-    border-radius: 10px;
-    position: relative;
+.imagewrap {
+    display: flex;
+    flex-direction: column;
 }
 
-.addimage {
-    font-size: 4rem;
-    color: #d9d6d6;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    user-select: none;
-}
-.icon {
-    font-size: 8rem;
-    color: #000000;
-    position: absolute;
-    bottom: 6px;
-    right: 6px;
-    color: #7e7d7d;
+.image {
+    width: 420px;
+    min-height: 300px;
+    border: 1px dashed #c0c0c0;
+    border-radius: 10px;
 }

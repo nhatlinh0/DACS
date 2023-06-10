@@ -1,18 +1,30 @@
+import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import styles from './Sidebar.module.css';
 import logo from './logo.jpg';
 
-function Sidebar() {
+const cx = classNames.bind(styles);
+
+function Sidebar({ crops, animal }) {
+    let classCrops = crops ? 'active' : '';
+    let classAnimals = animal ? 'active' : '';
     return (
         <div className={styles.container}>
             <div className={styles.logowrap}>
-                <img className={styles.logo} src={logo} alt={logo}></img>
+                <a href="https://dlu.edu.vn/">
+                    <img className={styles.logo} src={logo} alt={logo}></img>
+                </a>
             </div>
             <div className={styles.wrap}>
-                <div className={styles.crops}>
-                    <p className={styles.text}>Cây trồng</p>
+                <div className={cx('crops', classCrops)}>
+                    <Link to="/crops" className={styles.text}>
+                        Cây trồng
+                    </Link>
                 </div>
-                <div className={styles.animals}>
-                    <p className={styles.text}>Vật nuôi</p>
+                <div className={cx('animals', classAnimals)}>
+                    <Link to="/animals" className={styles.text}>
+                        Vật nuôi
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './InfoForm.module.css';
 import ContentStage from '../env';
@@ -6,6 +6,21 @@ import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
 function InfoForm({ info, name, content }) {
     let Layout = content ? ContentStage : Fragment;
+
+    const [avatar, setAvatar] = useState();
+
+    useEffect(() => {
+        return () => {
+            avatar && URL.revokeObjectURL(avatar.preview);
+        };
+    }, [avatar]);
+
+    const handlePreview = (e) => {
+        const file = e.target.files[0];
+        file.preview = URL.createObjectURL(file);
+        setAvatar(file);
+    };
+
     return (
         <>
             <div className={styles.container}>
@@ -13,9 +28,9 @@ function InfoForm({ info, name, content }) {
                 <div className={styles.wrap}>
                     <p className={styles.name}>{name}</p>
                     <input className={styles.add} type="text"></input>
-                    <div className={styles.image}>
-                        <p className={styles.addimage}>Thêm ảnh</p>
-                        <FontAwesomeIcon className={styles.icon} icon={faCamera} />
+                    <div className={styles.imagewrap}>
+                        <input type="file" className={styles.file} onChange={handlePreview}></input>
+                        {avatar && <img className={styles.image} src={avatar.preview} alt={avatar.preview}></img>}
                     </div>
                 </div>
                 <Layout></Layout>

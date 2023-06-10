@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    margin: 10px 0;
+}
+
+.headrow1 {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.stagename {
+    font-size: 2rem;
+}
+
+.iconcontainer {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+}
+
+.iconwrap {
+    display: flex;
+    margin-left: 0px;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 6px;
+}
+
+.text {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.headrow3 {
+    flex: 1;
+}

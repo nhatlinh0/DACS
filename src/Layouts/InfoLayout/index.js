@@ -5,14 +5,16 @@ import Button from './Button';
 import Stage from './StageForm';
 
 function InfoLayout(props) {
-  return (
-    <>
-      <Header>{props.children}</Header>
-      <InfoForm {...props}></InfoForm>
-      <Stage>{props.Stage}</Stage>
-      <Button></Button>
-    </>
-  );
+    return (
+        <>
+            <Header>{props.children}</Header>
+            <InfoForm {...props}></InfoForm>
+            <Stage crops={props.crops} animals={props.animals}>
+                {props.Stage}
+            </Stage>
+            <Button info crops={props.crops} animals={props.animals}></Button>
+        </>
+    );
 }
 
 export default InfoLayout;

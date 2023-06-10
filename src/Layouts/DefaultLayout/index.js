@@ -9,7 +9,7 @@ function DefaultLayout(props) {
         <>
             <div className={styles.container}>
                 <div className={styles.sidebar}>
-                    <Sidebar></Sidebar>
+                    <Sidebar {...props}></Sidebar>
                 </div>
                 <div className={styles.content}>
                     <Header></Header>

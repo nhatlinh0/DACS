@@ -2,13 +2,17 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Content.module.css';
 import Row from '../Row';
+import { Link } from 'react-router-dom';
 
 function Content(props) {
+    let route = props.crops ? '/infocropslayout' : '/infoanimalslayout';
     return (
         <div className={styles.container}>
             <div className={styles.titlewrap}>
                 <p className={styles.title}>{props.children}</p>
-                <button className={styles.btnadd}>+ Thêm</button>
+                <Link to={route}>
+                    <button className={styles.btnadd}>+ Thêm</button>
+                </Link>
             </div>
             <div className={styles.searchwrap}>
                 <input className={styles.searchbox} placeholder="Tìm kiếm" type="text"></input>
@@ -25,8 +29,8 @@ function Content(props) {
                     <p className={styles.headrowtext}>Tác vụ</p>
                 </div>
             </div>
-            <Row name="Cây khoai tây" decs="Xem thêm" action="Sửa"></Row>
-            <Row name="Cây cà phê" decs="Xem thêm" action="Sửa"></Row>
+            <Row crops={props.crops} name="Cây khoai tây" decs="Xem thêm" action="Sửa"></Row>
+            <Row crops={props.crops} name="Cây cà phê" decs="Xem thêm" action="Sửa"></Row>
         </div>
     );
 }
