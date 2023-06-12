@@ -24,9 +24,12 @@
     align-items: center;
 }
 
+.active .test {
+    color: black !important;
+}
+
 .active {
     border-left: 6px solid #4dd597;
-    color: black !important;
 }
 .crops {
     width: 100%;
@@ -52,4 +55,8 @@
 .text {
     font-size: 2.8rem;
     text-decoration: none;
+}
+
+.test {
+    color: #bdbdbd;
 }

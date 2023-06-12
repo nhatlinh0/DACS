@@ -15,7 +15,7 @@ function Button({ info, stage, crops, animals }) {
 
     return (
         <div className={styles.container}>
-            <Link to={route}>
+            <Link className={styles.link} to={route}>
                 <button className={styles.btnThoat}>X Thoát</button>
             </Link>
             <button className={styles.btnLuu}>+ Lưu</button>

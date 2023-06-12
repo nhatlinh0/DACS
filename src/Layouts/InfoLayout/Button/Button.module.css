@@ -4,11 +4,16 @@
     margin: 40px 0px;
 }
 
+.link {
+    width: 86px;
+    height: 30px;
+    margin-right: 40px;
+}
+
 .btnThoat {
     width: 86px;
     height: 30px;
     background-color: #e52222;
-    margin-right: 40px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -16,7 +21,7 @@
     width: 86px;
     height: 30px;
     background-color: #4dd597;
-    margin-right: 100px;
+    margin-right: 5%;
     cursor: pointer;
     border-radius: 4px;
 }

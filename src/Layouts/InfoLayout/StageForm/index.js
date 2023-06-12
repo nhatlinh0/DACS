@@ -16,7 +16,7 @@ function StageForm({ children, crops, animals }) {
                 </div>
                 <div className={styles.btnrow}>
                     <Link to={route}>
-                        <button className={styles.btn}>Thêm giai đoạn</button>
+                        <button className={styles.btn}>+ Thêm giai đoạn</button>
                     </Link>
                 </div>
             </div>

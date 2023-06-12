@@ -18,12 +18,12 @@ function Sidebar({ crops, animal }) {
             <div className={styles.wrap}>
                 <div className={cx('crops', classCrops)}>
                     <Link to="/crops" className={styles.text}>
-                        Cây trồng
+                        <p className={styles.test}>Cây trồng</p>
                     </Link>
                 </div>
                 <div className={cx('animals', classAnimals)}>
                     <Link to="/animals" className={styles.text}>
-                        Vật nuôi
+                        <p className={styles.test}>Con vật</p>
                     </Link>
                 </div>
             </div>
