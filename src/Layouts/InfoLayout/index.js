@@ -10,7 +10,7 @@ function InfoLayout(props) {
             <Header>{props.children}</Header>
             <InfoForm {...props}></InfoForm>
             <Stage crops={props.crops} animals={props.animals}>
-                {props.Stage}
+                {props.stage}
             </Stage>
             <Button info crops={props.crops} animals={props.animals}></Button>
         </>
